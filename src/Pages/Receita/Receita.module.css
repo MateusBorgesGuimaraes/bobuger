@@ -1,0 +1,215 @@
+.receitaBg {
+  background: black;
+  background-image: url("../../assets/imgs/textura-wood-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 2.5rem;
+}
+
+.receitaGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  color: white;
+  margin-top: 2.5rem;
+}
+
+.categoria {
+  text-transform: uppercase;
+}
+
+.receitaCol1 {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.receitaCol2 {
+  grid-row: 1;
+  grid-column: 5/-1;
+}
+
+.receitaIngredientes {
+  background: var(--color-marronClaro);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.receitaIngredientes li {
+  display: flex;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  background: var(--color-marronEscuro);
+}
+
+.receitaIngredientes li p {
+  margin-left: 0.75rem;
+  font-weight: 600;
+}
+
+.receitaImagem img {
+  border-radius: 0.5rem;
+}
+
+.receitaTitle {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.receitaSubFooter {
+  font-family: var(--font-secundaria);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.receitaSubFooter > div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.receitaContent h3 {
+  font-family: var(--font-secundaria);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.receitaContent p {
+  font-family: var(--font-secundaria);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 62.5rem) {
+  .receitaGrid {
+    margin-top: 2.5rem;
+  }
+
+  .receitaCol1 {
+    grid-column: 1/-1;
+    grid-row: 2;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .receitaCol2 {
+    grid-row: 1;
+    grid-column: 1/-1;
+  }
+
+  .receitaIngredientes {
+    width: 60%;
+  }
+
+  .receitaLista {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .receitaLista li {
+    width: 100%;
+    display: flex;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    justify-content: center;
+  }
+
+  .receitaLista li p {
+    margin-left: 0px;
+  }
+
+  .receitaImagem img {
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 52.5rem) {
+  /* .receitaGrid {
+    margin-top: 2.5rem;
+  } */
+
+  .receitaCol1 {
+    /* grid-column: 1/-1;
+    grid-row: 2; */
+    gap: 1rem;
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  /* .receitaCol2 {
+    grid-row: 1;
+    grid-column: 1/-1;
+  } */
+
+  .receitaIngredientes {
+    width: 100%;
+  }
+
+  .receitaLista {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .receitaLista li {
+    width: 100%;
+    /* display: flex;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    justify-content: center; */
+  }
+
+  /* .receitaLista li p {
+    margin-left: 0px;
+  }
+
+  .receitaImagem img {
+    border-radius: 0.5rem;
+  } */
+}
+
+@media (max-width: 33.75rem) {
+  .receitaTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .receitaSubFooter {
+    font-family: var(--font-secundaria);
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0px;
+  }
+
+  .receitaSubFooter > div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .receitaSubFooter > div,
+  .receitaSubFooter > p {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .receitaIngredientes {
+    padding: 0.25rem;
+  }
+
+  .receitaIngredientes li {
+    margin: 0.25rem;
+  }
+}

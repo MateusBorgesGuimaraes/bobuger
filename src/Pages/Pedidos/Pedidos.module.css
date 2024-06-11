@@ -1,0 +1,145 @@
+.bgPedidos {
+  background: black;
+  background-image: url("../../assets/imgs/textura-wood-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 2.5rem;
+  /* display: grid;
+  align-items: center; */
+}
+
+.containerPedidos {
+  /* margin-top: 2.5rem; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* APARTIR DQUUI */
+
+.tituloPedidos {
+  margin: 40px 0px;
+  grid-column: 1/-1;
+  font-size: 4rem;
+  color: white;
+  font-weight: 600;
+}
+
+.cartTable {
+  align-self: self-start;
+  grid-column: 1/-1;
+  grid-row: 2;
+  border-collapse: collapse;
+  background: white;
+  color: black;
+  border-radius: 0px 0px 8px 8px;
+  /* min-width: 48.75rem; */
+  /* min-width: 1100px; */
+  margin-bottom: 4px;
+}
+
+.tableContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb,
+.tableContainer::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: var(--color-marronEscuro);
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: var(--color-cinzaClaro);
+}
+
+caption,
+th,
+td {
+  padding: 1rem;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+caption {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: var(--color-marronEscuro);
+  border-radius: 8px 8px 0px 0px;
+  text-transform: uppercase;
+}
+
+th {
+  background: hsl(0 0% 0% / 0.3);
+}
+
+tr:nth-of-type(2n) {
+  background: hsl(0 0% 0% / 0.1);
+}
+
+/* ESTILOS GERAIS */
+
+.linkCol1 {
+  display: flex;
+  font-weight: 600;
+  gap: 0.75rem;
+  color: black;
+  align-items: center;
+}
+
+.id {
+  font-weight: 600;
+  gap: 0.75rem;
+  color: black;
+}
+
+.col1 > div,
+.col2 > div,
+.col3 > div,
+.col4 > div,
+.col5 > div,
+.col6 > div {
+  display: flex;
+  align-items: center;
+}
+
+.col1 img,
+.col2 img,
+.col3 img,
+.col4 img,
+.col5 img,
+.col6 img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.col6 > a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-marronEscuro);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.tableContainer {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 800px) {
+  .cartGrid {
+    grid-template-columns: 1fr;
+  }
+  .fecharPedido {
+    grid-template-columns: 1fr;
+  }
+}

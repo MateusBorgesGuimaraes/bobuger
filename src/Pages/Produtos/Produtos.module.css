@@ -1,0 +1,56 @@
+.bgProdutos {
+  background: black;
+  background-image: url("../../assets/imgs/textura-wood-bg.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 2.5rem;
+  /* display: grid;
+  align-items: center; */
+}
+
+.cotainerProds {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* justify-content: center;
+  align-items: center;
+  justify-items: center; */
+}
+
+.buttonsContainer {
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+  gap: 2rem;
+}
+
+.buttonsContainer > button {
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.buttonsContainer > button.active {
+  background: white;
+  color: black;
+  border-radius: 0.25rem;
+}
+
+.cardContainer {
+  margin-top: 1.25rem;
+  grid-row: 2;
+  grid-column: 2/12;
+
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

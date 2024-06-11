@@ -1,0 +1,72 @@
+.cardContainer {
+  max-width: 20.75rem;
+  display: flex;
+  border-radius: 0.5rem;
+  background: var(--color-white);
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--color-cinzaMedio);
+  scroll-snap-align: start;
+}
+
+.imgContainer {
+  width: 100%;
+
+  /* background-image: url("../../assets/imgs/hamburger-test.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%; */
+}
+
+.imgContainer img {
+  width: 100%;
+  object-fit: cover;
+  height: 13.125rem;
+}
+
+img {
+  margin-left: 0px;
+}
+
+.contentContainer {
+  padding: 1rem;
+}
+
+.listContainer {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.listContainer li {
+  font-family: var(--font-secundaria);
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 1.25rem;
+  padding: 0.125rem 0.75rem;
+  border: 1px solid black;
+}
+
+.descContent {
+  font-weight: 600;
+  color: var(--color-marronClaro);
+}
+
+.parteBaixoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preco {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-marronEscuro);
+}
+
+.btnAdd {
+  background: var(--color-primary);
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.125rem 1.25rem;
+  color: white;
+  font-weight: 600;
+}

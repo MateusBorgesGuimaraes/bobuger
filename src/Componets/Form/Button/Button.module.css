@@ -1,0 +1,24 @@
+.btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.875rem 1.5rem;
+  background: var(--color-primary);
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  background: var(--color-secondary);
+  color: black;
+  box-shadow: 0 0 0 2px #fea, 0 0 0 3px var(--color-secondary);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}

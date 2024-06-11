@@ -1,0 +1,22 @@
+.sidenav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--color-marronEscuro);
+  align-items: center;
+  justify-content: center;
+  height: 35rem;
+  border-radius: 1rem;
+  margin-top: 0.75rem;
+  border: 1px solid var(--color-marronClaro);
+}
+
+.sidenav ul li a {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: white;
+}
+
+.sidenav a:hover {
+  color: var(--color-marronClaro);
+}

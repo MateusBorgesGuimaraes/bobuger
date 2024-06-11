@@ -1,0 +1,537 @@
+/* HERO */
+
+.heroBg {
+  background-image: url("../../assets/imgs/imagem-inicial.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.paragrafoHero {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-family: var(--font-secundaria);
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.tituloHero {
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.btnsContainer {
+  margin-top: 1.75rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.social {
+  align-self: self-end;
+}
+
+.btnOrange {
+  position: relative;
+}
+
+.btnOrange::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/icons/mira-icon.svg");
+  display: block;
+  width: 11.875rem;
+  height: 11.875rem;
+  top: -10px;
+  left: 172px;
+  z-index: 200;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.maisVendidos h2 {
+  margin: 2.5rem 0px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* CARDS */
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* BENEFICIOS */
+
+.beneficiosBg {
+  margin-top: 2.5rem;
+  /* height: 400px; */
+  background: rgb(255, 212, 57);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 212, 57, 1) 0%,
+    rgba(255, 122, 0, 1) 100%
+  );
+}
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9.25rem;
+}
+
+.beneficio {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.beneficioCirculo {
+  height: 13.75rem;
+  width: 13.75rem;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+}
+
+.beneficioCirculo img {
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 0px;
+}
+
+.beneficioTexto {
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 20ch;
+  text-align: center;
+  color: var(--color-marronClaro);
+}
+
+/* RECOMENDACOES */
+
+.recomendacoesBg {
+  margin: 2.5rem 0px;
+}
+
+.recomendacoes {
+  display: flex;
+  gap: 1rem;
+}
+
+.cardRecomendacoes {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 0.75rem;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+}
+
+.cardRecomendacoes::-webkit-scrollbar {
+  height: 12px;
+}
+
+.cardRecomendacoes::-webkit-scrollbar-thumb,
+.cardRecomendacoes::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.cardRecomendacoes::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+.cardRecomendacoes::-webkit-scrollbar-track {
+  background: var(--color-cinzaClaro);
+}
+
+.imgRecomendacoes {
+  width: 35.25rem;
+  height: auto;
+  background-image: url("../../assets/imgs/recomendacoes-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgRecomendacoes p {
+  text-align: right;
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+}
+
+.cardNew {
+  min-width: 20.75rem;
+}
+
+/* QUALIDADES */
+
+.qualidadesBg {
+  /* height: 500px; */
+  background: var(--color-black);
+  padding: 40px 0px;
+}
+
+.qualidades {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.qualidades > div {
+  grid-column: 2/12;
+  display: grid;
+  gap: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  /* text-align: center; */
+  grid-template-areas:
+    "img1 img2 img3"
+    "img1 img4 img4";
+}
+
+.item1 {
+  background-image: url("../../assets/imgs/unsplash1-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: img1;
+  height: 498px;
+}
+
+.item2 {
+  grid-area: img2;
+  background-image: url("../../assets/imgs/unsplash2-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-position: center 40%; */
+  border-radius: 0.5rem;
+  height: 240px;
+}
+
+.item3 {
+  grid-area: img3;
+  background-image: url("../../assets/imgs/unsplash3-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  height: 240px;
+}
+
+.item4 {
+  grid-area: img4;
+  background-image: url("../../assets/imgs/unsplash4-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  height: 240px;
+}
+
+/* PARTE RECEITAS */
+
+.receitasBg {
+  margin: 2.5rem 0px;
+}
+
+.receitas h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.receitasContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.receitaItem:first-child {
+  background-image: url("../../assets/imgs/hamburger-test2.jpg");
+  height: 30rem;
+  border-radius: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.receitaItem:last-child {
+  background-image: url("../../assets/imgs/hamburger-test.jpg");
+  height: 30rem;
+  border-radius: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.receitaItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nomeReceita {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.btnRedondo {
+  justify-self: end;
+  align-self: self-end;
+  background: var(--color-primary);
+  padding: 0.625rem;
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.75rem;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    padding-top: 4rem;
+  }
+
+  .paragrafoHero {
+    margin-top: 6rem;
+    font-size: 1rem;
+  }
+
+  .tituloHero {
+    font-size: 3rem;
+  }
+
+  .btnsContainer {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnOrange::after {
+    display: none;
+  }
+
+  .social {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 25rem) {
+  .maisVendidos h2 {
+    font-size: 2rem;
+  }
+
+  .tituloHero {
+    font-size: 2rem;
+  }
+
+  .social {
+    display: none;
+  }
+}
+
+/* PARTE CARDS */
+@media (max-width: 66.5625rem) {
+  .cardContainer {
+    justify-content: center;
+  }
+}
+
+/* PARTE BENEFICIOS */
+@media (max-width: 67.375rem) {
+  .beneficios > .beneficio:nth-child(2) {
+    margin: 0px;
+  }
+  .beneficios {
+    gap: 2rem;
+  }
+}
+
+/* PARTE RECOMENDACOES */
+
+@media (max-width: 60rem) {
+  .recomendacoes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .imgRecomendacoes {
+    width: 100%;
+    height: 24rem;
+  }
+
+  .imgRecomendacoes p {
+    font-size: 2rem;
+  }
+}
+
+/* PARTE QUALIDADE */
+
+@media (max-width: 48.75rem) {
+  .qualidades > div {
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    grid-template-areas:
+      "img1 img2 "
+      "img3 img4 ";
+  }
+
+  .item1 {
+    height: 100%;
+    width: 18.75rem;
+  }
+
+  .item2 {
+    width: 18.75rem;
+    height: 200px;
+  }
+
+  .item3 {
+    width: 18.75rem;
+    height: 200px;
+  }
+
+  .item4 {
+    width: 18.75rem;
+    height: 200px;
+  }
+}
+
+@media (max-width: 43.75rem) {
+  .qualidades > div {
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    grid-template-areas:
+      "img1 img2 "
+      "img3 img4 ";
+  }
+
+  .item1 {
+    width: 100%;
+    height: 140px;
+  }
+
+  .item2 {
+    width: 100%;
+    height: 140px;
+  }
+
+  .item3 {
+    width: 100%;
+    height: 140px;
+  }
+
+  .item4 {
+    width: 100%;
+    height: 140px;
+  }
+}
+
+@media (max-width: 30rem) {
+  .qualidades > div {
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4";
+  }
+
+  .item1 {
+    width: 100%;
+    height: 140px;
+  }
+
+  .item2 {
+    width: 100%;
+    height: 140px;
+  }
+
+  .item3 {
+    width: 100%;
+    height: 140px;
+  }
+
+  .item4 {
+    width: 100%;
+    height: 140px;
+  }
+}
+
+/* RECEITAS */
+
+@media (max-width: 50rem) {
+  .receitasContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 25rem) {
+  .receitaItem:first-child,
+  .receitaItem:last-child {
+    height: 20rem;
+  }
+
+  .nomeReceita {
+    font-size: 2rem;
+  }
+
+  .receitas h2 {
+    font-size: 2rem;
+  }
+}

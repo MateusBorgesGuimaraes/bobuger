@@ -1,0 +1,41 @@
+.wrapper {
+  margin-bottom: 1rem;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid white;
+  background: none;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  padding: 0.8rem;
+  border-radius: none;
+  transition: 0.2s;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.error {
+  color: #f31;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  font-weight: 600;
+}

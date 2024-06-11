@@ -1,0 +1,56 @@
+.card {
+  max-width: 28rem;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.imgCardContainer {
+  position: relative;
+  margin-left: 0px;
+}
+
+.imgCardContainer img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.imgCardContainer span {
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.375rem;
+  color: #3a3027;
+  top: 0.75rem;
+  left: 0.75rem;
+}
+
+.categoria {
+  text-transform: uppercase;
+}
+
+.cardContainer {
+  color: black;
+}
+
+.data {
+  display: flex;
+  gap: 0.375rem;
+  font-family: var(--font-secundaria);
+  font-weight: 600;
+}
+
+.nomeReceita {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--marronClaro);
+  margin: 0px;
+}
+
+@media (max-width: 25rem) {
+  .nomeReceita {
+    font-size: 1rem;
+  }
+}

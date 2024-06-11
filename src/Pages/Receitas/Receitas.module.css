@@ -1,0 +1,104 @@
+.receitasBg {
+  background-image: url("../../assets/imgs/imagem-fundo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 40%;
+  height: 100vh;
+  width: 100%;
+  border-image: fill 0 linear-gradient(#000, #0003);
+}
+
+.heroReceita {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.receitasBg {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroReceita h1 {
+  color: var(--color-white);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.contentReceita {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 2rem;
+}
+
+.contentReceita::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../assets/icons/seta3-icon.svg");
+  background-repeat: no-repeat;
+  width: 3.75rem;
+  height: 3.75rem;
+  left: 0px;
+  bottom: -40px;
+}
+
+.heroReceita p {
+  color: var(--color-white);
+  font-family: var(--font-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.social {
+  align-self: self-end;
+  position: absolute;
+  bottom: -3rem;
+}
+
+@media (max-width: 50rem) {
+  .heroReceita h1 {
+    font-size: 2rem;
+  }
+
+  .contentReceita {
+    gap: 2rem;
+  }
+
+  .contentReceita::before {
+    display: none;
+  }
+
+  .heroReceita p {
+    font-size: 1rem;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .contentReceita > img {
+    display: none;
+  }
+}
+
+.receitasContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cardsReceitas {
+  margin: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
